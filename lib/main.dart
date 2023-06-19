@@ -1,4 +1,4 @@
-import 'package:first_app/home_page.dart';
+import 'package:first_app/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +15,10 @@ class MyApp extends StatelessWidget {
     // var day = "Tuesday";
     // const pi = 3.14;
 
-    return MaterialApp(home: HomePage());
+    return MaterialApp(
+      home: HomePage(),
+      themeMode: ThemeMode.dark,
+      darkTheme: ThemeData(brightness: Brightness.dark),
+    );
   }
 }

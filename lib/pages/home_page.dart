@@ -7,6 +7,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bringVegetables(rupees: 500);
     return Scaffold(
       appBar: AppBar(
         title: Text("Catalog App"),
@@ -14,7 +15,13 @@ class HomePage extends StatelessWidget {
       body: Center(
           child: Center(
         child: Text("Welcome to the $days days of Flutter by $name"),
-      )), drawer: Drawer(),
+      )),
+      drawer: Drawer(),
     );
+  }
+
+  bringVegetables({bool thaila = true, int rupees = 100}) {
+    // take bicycle
+    // take money
   }
 }
