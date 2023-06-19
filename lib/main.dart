@@ -1,3 +1,4 @@
+import 'package:first_app/pages/Login_page.dart';
 import 'package:first_app/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -16,9 +17,13 @@ class MyApp extends StatelessWidget {
     // const pi = 3.14;
 
     return MaterialApp(
-      home: HomePage(),
       themeMode: ThemeMode.dark,
-      darkTheme: ThemeData(brightness: Brightness.dark),
+      darkTheme: ThemeData(brightness: Brightness.light),
+      routes: {
+        "/": (context) => LoginPage(),
+        "/home": (context) => HomePage(),
+        "/login": (context) => LoginPage()
+      },
     );
   }
 }
