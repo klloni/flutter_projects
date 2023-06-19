@@ -29,7 +29,7 @@ class LoginPage extends StatelessWidget {
                     obscureText: true,
                     decoration: const InputDecoration(
                         hintText: "Enter password", labelText: "Password")),
-                const SizedBox(height: 20),
+                const SizedBox(height: 200),
                 ElevatedButton(
                     style: ButtonStyle(
                         backgroundColor:
