@@ -16,7 +16,6 @@ class HomePage extends StatelessWidget {
           child: Center(
         child: Text("Welcome to the $days days of Flutter by $name"),
       )),
-      drawer: Drawer(),
     );
   }
 
